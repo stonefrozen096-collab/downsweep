@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "downsweep"
-version = "0.2.1"
-description = "Sort a messy Downloads folder into neat folders with one command. Includes preview and undo."
+version = "0.3.0"
+description = "Sort a messy Downloads folder into neat folders with one command. Includes preview, undo and custom rules."
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
