@@ -1,15 +1,28 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "downsweep"
-version = "0.1.0"
-description = "Sort a messy Downloads folder into neat folders with one command."
+version = "0.2.1"
+description = "Sort a messy Downloads folder into neat folders with one command. Includes preview and undo."
 readme = "README.md"
 requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Hari Prasath S" }]
-keywords = ["downloads", "organizer", "cleaner", "files", "cli"]
+keywords = ["downloads", "organizer", "cleaner", "files", "cli", "undo"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/stonefrozen096-collab/downsweep"
+Source = "https://github.com/stonefrozen096-collab/downsweep"
+Issues = "https://github.com/stonefrozen096-collab/downsweep/issues"
 
 [project.scripts]
 downsweep = "downsweep.cli:main"
