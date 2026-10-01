@@ -16,6 +16,24 @@ Your Downloads folder is full of PDFs, installers, screenshots and zip files all
 pip install downsweep
 ```
 
+## Command not recognised?
+
+On some Windows computers, the `downsweep` command isn't found right after installing. This happens because Windows doesn't know where pip put it. It's not a problem with your files, and there's an easy fix: start it through Python instead.
+
+```
+python -m downsweep --preview
+```
+
+If `python` isn't recognised either, try:
+
+```
+py -m downsweep --preview
+```
+
+Everything works the same way, for example `python -m downsweep --undo` or `python -m downsweep --rules`.
+
+If pip says something like "defaulting to user installation" or "not writeable" while installing, that is normal and harmless. It only means pip installed downsweep for your user account.
+
 ## Quick start
 
 See what would happen first. Nothing is moved:
